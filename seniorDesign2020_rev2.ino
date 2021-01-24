@@ -1,3 +1,8 @@
+//******seniorDesignSp2021 Sensor Suite ON Board Sensor code*********
+//Pupose: Using the AdaFruit Feather NRF5240 Sense board, the on board accelerometer/gryroscope (LSM6DS33) and the temperature sensors were manipulated to display //specific readings. A red LED was indicated HIGH whenever the board was collecting data. 
+//REV2 inclusions: integration of fails safe while loop for the initialization of the sensors, 
+
+ 
 #include <Adafruit_BMP280.h>
 #include <LSM6.h>
 #include <Wire.h>
