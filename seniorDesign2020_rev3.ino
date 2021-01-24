@@ -56,7 +56,7 @@ void loop(void) {
     lsm6ds33.read(); //Takes a reading from both the accelerometer and gyro and stores the values in the vectors a and g
     Serial.print("Temperature: ");
     Serial.print(temperature);
-    Serial.println(" C");
+    Serial.println(" F");
   
     snprintf(report, sizeof(report), "Accel: %6d %6d %6d    Gyro: %6d %6d %6d",
        lsm6ds33.a.x, lsm6ds33.a.y, lsm6ds33.a.z,
